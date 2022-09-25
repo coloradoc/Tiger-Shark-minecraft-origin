@@ -1,0 +1,41 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 5,
+    "duration_per_stack": 20,
+
+        "effects": [
+          {
+            "effect": "minecraft:dolphins_grace",
+            "duration": 60,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false
+          },
+          {
+            "effect": "minecraft:weakness",
+            "duration": 60,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false,
+            "amplifier": 5
+          },
+          {
+            "effect": "mining_fatigue",
+            "duration": 60,
+            "is_ambient": false,
+            "show_particles": false,
+            "show_icon": false,
+            "amplifier": 0
+          }
+
+      ],
+        
+    
+    "condition": {
+        "type": "origins:submerged_in",
+        "fluid": "minecraft:water"
+    },
+    "name": "Cute Shark Fins",
+    "description": "You swim much faster while being in water, but have a harder time mining and cannot fight when submerged."
+}

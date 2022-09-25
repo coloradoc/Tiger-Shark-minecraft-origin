@@ -1,0 +1,55 @@
+{
+
+  "name": "Latex Hivemind",
+  "hidden": "false",
+  "description": "You gain a slight speed boost, strength buff, and regeneration when standing on latex (quartz), as it is a part of you",
+
+  "condition": {
+    "type": "origins:on_block",
+  "block_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+          "type": "origins:block",
+          "block": "minecraft:quartz_block"
+      },
+      {
+          "type": "origins:block",
+          "block": "minecraft:smooth_quartz"
+      }
+    ]
+  }
+},
+
+  
+
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
+        "effect": "minecraft:speed",
+        "duration": 60,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:strength",
+        "duration": 60,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 60,
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      }
+  ]
+    
+}
+}

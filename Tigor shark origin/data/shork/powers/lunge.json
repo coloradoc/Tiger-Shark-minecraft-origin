@@ -1,0 +1,209 @@
+{
+    "name": "Combat leap",
+    "description": "You leap forward giving yourself strength and regeneration, but tire out quickly.",
+    "type": "origins:multiple",
+    "pounce": {
+
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": false
+        },
+        "hidden": false,
+        "type": "origins:active_self",
+        "cooldown": 2000,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+            "bar_index": 16
+        },
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:poof ~ ~ ~ 0.6 0.02 0.6 0.1 10"
+                },
+
+                {
+                    "type": "origins:add_velocity",
+                    "z": 1,
+                    "space": "local"
+                },
+                {
+                    "type": "origins:add_velocity",
+                    "y": 0.2,
+                    "space": "world"
+                },
+
+
+
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 0,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 10,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 20,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 30,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 40,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                    
+                    "type": "origins:delay",
+                    "interval": 20,
+                    "ticks": 50,
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "summon falling_block ~ ~ ~ {BlockState:{Name:\"minecraft:snow\"},Time:1}",
+                        "permission_level": 4
+                    },
+                    "condition": {
+                        "type": "origins:biome",
+                        "condition": {
+                            "type": "origins:precipitation",
+                            "precipitation": "none"
+                        }
+                    }
+                    
+                },
+                {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:strength",
+                    "duration": 100,
+                    "amplifier": 0
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:regeneration",
+                    "duration": 100,
+                    "amplifier": 0
+                }
+            },
+            {
+                    
+                "type": "origins:delay",
+                "interval": 20,
+                "ticks": 100,
+                "action":{
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:slowness ",
+                    "duration": 100,
+                    "amplifier": 0
+                }
+            }
+                
+            },
+            {
+                    
+                "type": "origins:delay",
+                "interval": 20,
+                "ticks": 100,
+                "action":{
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:weakness",
+                    "duration": 100,
+                    "amplifier": 0
+                }
+            }
+                
+            }
+            
+
+
+
+            ]
+        }
+
+    }
+} 

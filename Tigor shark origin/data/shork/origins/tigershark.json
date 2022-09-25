@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"shork:amphibious",
+		"shork:latex",
+		"shork:pyrophobia",
+		"shork:lunge",
+		"shork:slow"
+	],
+	"icon": "minecraft:brain_coral",
+	"order": 12,
+	"impact": 2,
+	"name": "Tiger Shark",
+	"description": "The power of a shark and a tiger in a latex body!"
+}
+

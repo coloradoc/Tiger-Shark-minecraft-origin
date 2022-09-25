@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"shork:choco_lover"
+	],
+	"icon": "minecraft:brain_coral",
+	"order": 10,
+	"impact": 2,
+	"name": "Tiger Shark",
+	"description": "The power of a shark and a tiger in  a latex body"
+}
+

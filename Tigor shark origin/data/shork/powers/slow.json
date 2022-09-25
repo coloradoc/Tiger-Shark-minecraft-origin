@@ -1,0 +1,11 @@
+{
+"type": "origins:attribute",
+		"modifier": {
+			"name": "Speed increase",
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.01,
+			"operation": "addition"
+		},
+        "name": "Slower on land",
+        "description": "Your body is not adapted for land, you walk and run slower."
+	}
